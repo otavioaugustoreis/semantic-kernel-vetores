@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semantic-kernel-vetores", "semantic-kernel-vetores\semantic-kernel-vetores.csproj", "{8371F069-B20B-42DC-AD90-6270B66703A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8371F069-B20B-42DC-AD90-6270B66703A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8371F069-B20B-42DC-AD90-6270B66703A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8371F069-B20B-42DC-AD90-6270B66703A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8371F069-B20B-42DC-AD90-6270B66703A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13862E02-E8D9-45F3-9B46-DF81BEF910C5}
+	EndGlobalSection
+EndGlobal
