@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.KernelMemory.MemoryDb.Qdrant" Version="0.98.250324.1" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.47.0" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.47.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Qdrant" Version="1.48.0-preview" />
     <PackageReference Include="Qdrant.Client" Version="1.14.0" />
   </ItemGroup>
 

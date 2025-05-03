@@ -28,11 +28,11 @@ namespace semantic_kernel_vetores.Entities
         public ulong HotelId { get; set; }
 
         //Permite filtrar por esse campo (ex.: WHERE HotelName = "Copacabana Palace").
-        [VectorStoreRecordData(IsFilterable = true)]
+        [VectorStoreRecordData(IsIndexed = true)]
         public string HotelName { get; set; }
 
         //Habilita busca por texto completo (ex.: encontrar "hotel à beira-mar" mesmo se a descrição usar "frente para o oceano").
-        [VectorStoreRecordData(IsFullTextSearchable = true)]
+        [VectorStoreRecordData(IsIndexed = true)]
         public string Description { get; set; }
 
         //O Coração Vetorial
@@ -43,11 +43,11 @@ namespace semantic_kernel_vetores.Entities
           DistanceFunction.CosineSimilarity: Métrica para comparar vetores (outras opções: Euclidean, DotProduct).
           IndexKind.Hnsw: Algoritmo de indexação para buscas eficientes (Hierarchical Navigable Small World).
         */
-        [VectorStoreRecordVector(Dimensions: 4, DistanceFunction.CosineSimilarity, IndexKind.Hnsw)]
+        [VectorStoreRecordVector(Dimensions : 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Flat)]
         public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
 
         //Útil para filtros múltiplos (ex.: Tags.Contains("luxo")).
-        [VectorStoreRecordData(IsFilterable = true)]
+        [VectorStoreRecordData(IsIndexed = true)]
         public string[] Tags { get; set; }
     }
 }
